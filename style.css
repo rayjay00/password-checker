@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Fira+Sans');
+
+
+body {
+  background-color: #D4BFFF;
+}
+
+.main {
+  width: 370px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 5%;
+}
+
+.main * {
+  box-sizing: border-box;
+}
+
+.slanted {
+    background-color: #9966ff;
+    height: 125px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1 {
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 60px;
+}
+
+p {
+  text-align: center;
+}
+
+.flex-outer {
+  list-style-type: none;
+  text-align: center;
+}
+
+.flex-outer li {
+  font: normal 18px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+label {
+  padding-right: 5px;
+  flex: 0.6;
+}
+
+input {
+  flex: 1;
+  height: 25px;
+  margin-right: 40px;
+}
+
+.flex-outer li p {
+  padding-right: 5px;
+  flex: 0.6;
+  display: none;
+}
+
+meter {
+  flex: 1.02;
+  margin-right: 40px;
+  height: 0.5em;
+  display: none;
+}
+
+meter::-webkit-meter-bar {
+  background: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Webkit based browsers */
+meter[value="1"]::-webkit-meter-optimum-value { background: red; }
+meter[value="2"]::-webkit-meter-optimum-value { background: yellow; }
+meter[value="3"]::-webkit-meter-optimum-value { background: orange; }
+meter[value="4"]::-webkit-meter-optimum-value { background: green; }
+
+/* Gecko based browsers */
+meter[value="1"]::-moz-meter-bar { background: red; }
+meter[value="2"]::-moz-meter-bar { background: yellow; }
+meter[value="3"]::-moz-meter-bar { background: orange; }
+meter[value="4"]::-moz-meter-bar { background: green; }
+
+
+.form-lower {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 0;
+  background-color: #7E3FFF;
+  color: white;
+  font-family: sans-serif;
+  font: normal 1.5em "Fira Sans", "Helvetica Neue", sans-serif;
+}
+
+p a {
+ font: normal 16px/1.5 "Fira Sans", "Helvetica Neue", sans-serif;
+ text-decoration: none;
+  color: black;
+}
